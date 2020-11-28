@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Kumbh Sans;
+    background-color: hsl(185, 75%, 39%);
+    background-image:url("/images/bg-pattern-top.svg"),url("/images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position:0%,0%;
+    
+}
+
+.container{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:80vh;
+    width: 90vw;
+    border-radius: 20px;
+    background-color: white;
+   
+    
+}
+.user-background{
+    height: 30vh;
+    background-image: url("/images/bg-pattern-card.svg");
+    border-radius: 20px 20px 0 0;
+}
+.user-profile {
+text-align: center;
+height:16vh;
+
+}
+.user-profile img{
+    position: absolute;
+    border-radius: 50px;
+    border: 4px solid white;
+    margin: auto;
+    top:24%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.user-profile h1{
+    margin-top:22%;
+    font-weight:600;
+    font-size:18px;
+    color: hsl(229, 23%, 23%);
+}
+.user-profile h1 span{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+.user-profile p{
+    color: hsl(0, 0%, 59%);
+    margin-top: 4%;
+}
+.user-stats{
+    height: 20vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-end;
+    border-top: 1px solid   hsla(0, 0%, 59%,0.2);
+}
+.stats{
+    align-self: center;
+    padding: 20px;
+}
+.stats p{
+    font-weight: 600;
+    color: hsl(229, 23%, 23%);
+}
+.stats span{
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+}
+@media(min-width:481px){
+    .container{ 
+        
+        width: 50vw;
+        
+    }
+    
+}
+@media(min-width:1024px){
+    .container{ 
+        height: 65vh;
+        width: 35vw;
+        
+    }
+    .user-profile {
+        height:15vh;
+    }
+    .user-stats{
+        height: 14vh;
+    }
+    .stats{
+        align-self: center;
+        padding: 10px;
+    }
+    .user-background{
+        height: 25vh;
+    }
+    .user-profile img{
+        top:26%;
+    }
+    
+    .user-profile h1{
+        margin-top:15%;
+       
+    }
+}
