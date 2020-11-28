@@ -10,7 +10,7 @@
 body{
     font-family: Kumbh Sans;
     background-color: hsl(185, 75%, 39%);
-    background-image:url("/images/bg-pattern-top.svg"),url("/images/bg-pattern-bottom.svg");
+    background-image:url("images/bg-pattern-top.svg"),url("images/bg-pattern-bottom.svg");
     background-repeat: no-repeat;
     background-position:0%,0%;
     
@@ -30,7 +30,7 @@ body{
 }
 .user-background{
     height: 30vh;
-    background-image: url("/images/bg-pattern-card.svg");
+    background-image: url("images/bg-pattern-card.svg");
     border-radius: 20px 20px 0 0;
 }
 .user-profile {
